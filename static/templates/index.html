@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}BMS | Inicio {% endblock %}
+
+{% block content %}
+
+    <div class="section div-fluid">
+        <div class="container-fluid div-fluid">
+            <div class="row section-main">
+                <div class="col-xs-4 col-md-5 brand" >
+                    <!-- <hr> -->
+                    <!-- <h1><i class="fa fa-user"></i></h1> -->
+                   <div id="brand-left"><hr> Brenda <hr></div>
+                    </div>
+                <div class="col-xs-4 col-md-2 brand-img">
+                    <img class="img-responsive " src="{% static 'img/bms2.jpg' %}">
+                    </div>
+                <div class="col-xs-4 col-md-5 brand" >
+                    <div id="brand-right"><hr> Stephanie <hr></div>
+
+                    <!-- <hr> -->
+                </div>
+            </div>
+            <br>
+         <div class="row" id="row-index">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="div-index-left">
+
+                    <div id="carousel-example-generic" class="carousel slide"  id="carousel" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="{% static 'img/img_proj_aqua_bn.png' %}" alt="...">
+                          <div class="carousel-caption">
+                            Proyecto AQUOLITY
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="{% static 'img/img_proj_fractal_bn.png' %}" alt="...">
+                          <div class="carousel-caption">
+                            Skin Cancer Diagnosis
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="{% static 'img/img_proj_datile.png' %}" alt="...">
+                          <div class="carousel-caption">
+                            Framework Android
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xs-12  col-sm-6  col-md-6 ">
+                <div class="div-index-right">
+                 <h1>Passionate about Engineering, Technology and Science</h1>
+                <p>Meet my projects and if you have ideas to improve or disseminate them, let me know. If you want to join a team, you are welcome . I hope I can reach you soon.</p>
+                 <a class="btn btn-lg btn-info" href="{% url 'portfolio'%}" title="Portfolio">Projects &nbsp;<i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+<br>
+<br>
+
+
+ <div class="container-fluid div-fluid" id="container-footer">
+        <div class="row row-index-footer ">
+            <div class="col-lg-8 col-md-8">
+               <h3><i class="fa fa-quote-left"></i>
+               Only after the last tree has been cut down. Only after the last river has been poisoned. Only after the last fish has been caught. Only then will you find that money cannot be eaten.
+               <i class="fa fa-quote-right"></i> <br>
+                 -Cree Indian prophecy- </h3>
+            </div>
+            <div class="col-lg-4 col-md-4 ">
+                <button class="btn btn-default btn-lg" id="btn-footer" data-toggle="modal" data-target="#myModal">
+                     Inspiration
+                </button>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+            <h4 class="modal-title" id="myModalLabel">Inspiration</h4>
+          </div>
+          <div class="modal-body">
+            <p> Some things I've learned and would like to share: </p>
+            <ul>
+              <li> "There are basically two types of people in this world. People who have great ideas and people who have great ideas that do not hesitate to run." - Myself</li>
+                <li>"It's not because things are difficult that we dare not venture. It's because we dare not venture that they are difficult." - Seneca</li>
+                <li>Follow your passion. Life is too short to live someone else's dream.</li>
+            </ul>
+            <p>Thanks for reading.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Got it!</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!--<h1>Join now</h1>
+<form method="POST" action="">{% csrf_token %}
+    {{form.as_p}}
+    <input type="submit">
+</form>-->
+{% endblock %}

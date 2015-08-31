@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}BMS | About {% endblock %}
+
+{% block content %}
+
+<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Sobre mí</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive" id="img-about"  src="{% static 'img/bms3.jpg' %}"/>
+            </div>
+            <div class="col-md-8">
+                <h2 class="navbar-brand-dark">Brenda Manrique</h2>
+                <h4>ING. DE SISTEMAS</h4>
+
+                <p>Esta idea fue inspirada en el libro "The Start-up of you" de Reid Hoffman, co-fundador de LinkedIn y Ben Casnocha. Valoré la importancia de desarrollar una marca personal, una marca que uno mismo pueda llevar sin importar el trabajo en el que me encuentre. Eres el dueño de tí mismo.</p>
+                <blockquote>"You own yourself." - The Start-up of You. </blockquote>
+                <p>Desarrollé algunos proyectos y estoy en búsqueda de conocimiento que me pueda ayudar a desarrollar aún más de estos, pero, ¿Cómo saber si aportarán su granito de arena para mejorar la sociedad en que vivimos? Pues tu no sabes cuál es el mejor plan hasta que lo pruebas.</p>
+                <blockquote>"You don't know what the best plan is until you try." - The Start-up of You. <br>
+                "But as much as you can, prioritize plans that offer the best chance at learning about yourself and the world." - The Start-up of You. </blockquote>
+                <p>La última frase es tan cierta, para conocerme un poco más me gusta ponerla en práctica: Cuanto más puedas, prioriza los planes que ofrezcan la mejor oportunidad de aprender sobre tí mismo y sobre el mundo.</p>
+                <div class="social-links">
+                    <ul>
+                        <li><a class="twitter" href="#"><span> </span></a></li>
+                        <li><a class="facebook" href="#"><span> </span></a></li>
+                        <li><a class="linkedin"  href="#"><span> </span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Our Customers -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2 class="page-header">Relacionados</h2>
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6" >
+                <img class="img-responsive img-customer" id="img-related-ucsm" src="http://www.ucsm.edu.pe/matriculaOnline/libreria/imagenes/escudo.gif">
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6" >
+                <img class="img-responsive img-customer" id="img-related"  src="http://www.neos.hr/wordpress/wp-content/uploads/2013/08/oracle-university.png">
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6" >
+                <img class="img-responsive img-customer"  id="img-related"  src="http://sites.ieee.org/finland/files/2012/10/logo.gif">
+            </div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6" >
+                <img class="img-responsive img-customer" id="img-related-android"  src="http://www.artit-k.com/wp-content/uploads/2013/05/Android-Developer-logo.png">
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+
+
+{% endblock %}

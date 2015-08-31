@@ -1,0 +1,107 @@
+ {% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}BMS | Portfolio {% endblock %}
+
+{% block content %}
+
+<div id="loader"></div>
+
+  <div class="container" id="scroll-container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Projects </h1>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-7 ">
+                <!-- <a href="portfolio-item.html" > -->
+                    <img class="img-responsive" src="{% static 'img/img_proj_aqua.png' %}">
+                <!-- </a> -->
+            </div>
+
+            <div class="col-md-5">
+                <h3>Aquolity</h3>
+                <h4>Plataforma crowdsourcing para monitoreo de calidad del agua</h4>
+                <p>El proyecto se enfoca en brindar una solución de monitoreo de calidad del agua alrededor del mundo, todo esto basado en la capacidad de colaboración de la comunidad. Aquolity quiere llegar a ser la principal fuente de consulta sobre los principales problemas y soluciones en temas relacionados con la calidad del agua consumible y utilizable por poblaciones en vías de desarrollo. Así mismo se centra en llegar a ser un medio entre las organizaciones/personas que puedan brindar soluciones eficaces a cada tipo de problema encontrado mediante diversos tipos de prueba de calidad del agua que se expondrán en el presente proyecto.</p>
+                <a class="btn btn-primary" >See Project<i class="fa fa-angle-right"></i></a>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+            <div class="col-md-7" id="img-portfolio">
+                <!-- <a href="portfolio-item.html"> -->
+                    <img class="img-responsive" src="{% static 'img/img_proj_fractal.png' %}">
+                <!-- </a> -->
+            </div>
+
+            <div class="col-md-5">
+                <h3>Skin Cancer Diagnosis using Fractal Dimension</h3>
+                <h4>Poster Contest Winner at AGSE (Applied Geoinformatics for Society and Environment) International Congress 2010</h4>
+                <p>This paper describes the application of fractal geometry for the diagnosis of skin cancer based on measurements of mole samples: normal and irregular fractal dimension. This method uses the Koch curve to capture some sample’s characteristics, we are talking about   attributes of measurement and degree of irregularity in order to classify and determine its type.</p>
+                <a class="btn btn-primary"  href="<?php echo site_url('portfolio-pj2');?>">See Project<i class="fa fa-angle-right"></i></a>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="row">
+
+            <div class="col-md-7 ">
+                <!-- <a href="portfolio-item.html" > -->
+                    <img class="img-responsive" src="{% static 'img/img_proj_datile.png' %}" >
+                <!-- </a> -->
+            </div>
+
+            <div class="col-md-5">
+                <h3>Framework orientado a la implementación de aplicaciones para la adquisición de datos en dispositivos móviles sobre la plataforma Android utilizando creación dinámica de componentes gráficos.</h3>
+                <h4>Tesis con Felicitación Pública / Thesis with Honorable Mention</h4>
+                <p>En el ámbito del desarrollo de software cuando hablamos de Framework hacemos referencia a una estructura conceptual y tecnológica compuesta de artefactos o módulos de software concretos que sirvan de base para la organización y desarrollo de software, esto permite a las personas especializadas enfocarse en requerimientos más importantes y mantener un producto final de fácil mantenimiento; a razón de ello el presente proyecto establece un marco de trabajo para reducir el tiempo de implementación de aplicaciones móviles para adquisición de datos.</p>
+                <a class="btn btn-primary">See Project<i class="fa fa-angle-right"></i></a>
+            </div>
+
+        </div>
+
+        <hr>
+
+
+        <div class="row text-center">
+
+            <div class="col-lg-12">
+                <ul class="pagination " >
+                    <li><a href="#">&laquo;</a>
+                    </li>
+                    <li class="active"><a disabled href="#">1</a>
+                    </li>
+                    <!-- <li><a href="#">2</a> </li> -->
+
+
+                    <li><a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+
+<div id="pages" style="display:none;">
+    <a href="index.html"></a>
+    <a href="page2.html"></a>
+    <a href="page3.html"></a>
+    <a href="page4.html"></a>
+    <a href="page5.html"></a>
+    <a href="page6.html"></a>
+</div>
+{% endblock %}

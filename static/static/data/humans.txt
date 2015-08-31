@@ -1,0 +1,17 @@
+/*brendamanrique.com |  Mi portafolio */
+
+/* TEAM */
+	Creator: Brenda Manrique
+	Contact: me
+	Twitter: @bmanrique
+	From: Arequipa, Perú
+
+/*THANKS*/
+	To all free software community
+
+/* SITE */
+	Last update:today
+	Language: English, Spanish
+	Standards: HTML5, CSS3, JavaScript
+	Components: jQuery
+	Software: SublimeText2

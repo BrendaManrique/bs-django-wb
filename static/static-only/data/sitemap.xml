@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xlmns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url><loc>http://subdominio.com/index.html</loc></url>
+	<url><loc>http://subdominio.com/acerca.html</loc></url>
+	<url><loc>http://subdominio.com/contacto.html</loc></url>
+</urlset>
