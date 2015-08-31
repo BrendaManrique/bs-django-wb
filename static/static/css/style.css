@@ -251,17 +251,6 @@ Portfolio  750x350
 	margin-right: auto;
 }
 
-#loader {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: left;
-    opacity: .8;
-    background-color: #FFFFFF;
-}
 
 /* -----------------------------------------
     Responsive Styles 
